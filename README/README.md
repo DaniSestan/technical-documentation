@@ -14,112 +14,66 @@
 
 ## Table of contents
 
-{This section is optional.}
-
-1. Heading 1
-
-2. Heading 2
-
-3. Heading 3...
+1. Project description
+2. Project setup
+3. Contributing guidelines
+4. Project documentation
+5. Links to support resources
+6. Terms of use
 
 ## Project description
 
-{The README template guide includes information on how to write a project description and a project description. Here are some examples of effective phrases for describing a project.}
+### What kind of software is this?
 
-With _{Project Name}_ you can _{verb}_ _{noun}_...
+[...]
 
-_{Project Name}_ helps you _{verb}_ _{noun}_...
+__________________
 
-Unlike _{alternative}_, _{Project Name}_ _{verb}_ _{noun}_...
+### Who can use this app?
 
-{Include screenshots and/or demo videos if applicable}
+[...]
 
-## Project structure
+__________________
 
-_Use PEP's naming conventions when modifying the src packages and modules._
+### How is the project is organized?
 
-Naming conventions within the project source folder:
-- Name of project package: `{PROJECT_NAME}`
-- Name of frontend app package: `{PROJECT_NAME}_APP`
-- Name of Jinja template packages: `{TEMPLATE_FRAMEWORK_OR_DESCRIPTION}`
-  - Folders & subfolders using the Flask extension of SemanticUI retain their names, including packages and modules: `{PROJECT_ROOT}/src/{PROJECT_NAME}/flask_semanticui`; `{PROJECT_ROOT}/src/{PROJECT_NAME}/{PROJECT_NAME_APP}/semantic`
+#### Naming conventions
 
-## Who this project is for
+###### What is the official 'source of truth' for 'standardization'?
 
-This project is intended for {target user} who wants to {user objective}.
+###### E.g., PEP defines the naming convention guidelines for Python.
 
-## Project dependencies
+[...]
 
-Before using {Project Name}, ensure you have:
+#### Project structure
 
-### Required
+[...]
+
+#### File types
+
+###### Not all files types are necessary according to the 'latest' recommendations.
+###### Understand the context of the software app as an end-product.
+###### What's the difference between project recommendations versus requirements?
+
+[...]
+
+## Project setup
+
+### Pre-requisites
+
+Before using {Project name}, install necessary pkgs:
+
+* [Python](https://www.python.org/downloads/)
+
+### Requirements
+
 GitHub will automatically not push any tokens.
 
 However, to commit any changes the .gitignore file must include any files that contain credentials.
 
 If the Markdown Changelog Generator is used, it needs to include  'changelog_generator.toml' because it lists your GitHub repo's PAT (Personal Access Token). 
 
-### Recommended
-
-* [Markdown Changelog Generator](https://changelog.seapagan.net)
-  
-  `github-changelog-md`
-  
-  _For additional options and advanced usage, refer to the documentation._
-  
-    _Note: Dont commit the config file to your project repository!_
-  
-    The config file contains your GitHub PAT. GitHub always prevents committing credentials, so to push any commit, it's necessary to include the changelog_generator.toml file in the .gitignore.
-
-    The CHANGELOG generator creates CHANGELOG entries based on the repository PRs. For instance, the PR label, is used to define CHANGELOG entry section. Note that options are available to customize the output of the tool, as per the documentation.
-    
-    | Title               | Label           | Notes                       |
-    |----------------------|-----------------|------------------------------|
-    | Breaking Changes     | breaking        |                              |
-    | Merged Pull Requests |                 | Any PR with NO labels        |
-    | Enhancements         | enhancement     |                              |
-    | Bug Fixes            | bug             |                              |
-    | Refactoring          | refactor        |                              |
-    | Documentation        | documentation   |                              |
-    | Dependency Updates   | dependencies    |                              |
-
-    To make merge requests from the command line:
-    
-    Step 1: Clone the repository or update your local repository with the latest changes.
-    
-    git pull origin main
-    
-    Step 2: Switch to the base branch of the pull request.
-    
-    git checkout main
-    
-    Step 3: Merge the head branch into the base branch.
-    
-    git merge dev
-    
-    Step 4: Push the changes.
-    
-    git push -u origin main
-
-
-* TOML files
-    
-  _Note that this file type is recommended for scalable Python projects._
-  
-  _The pyproject.toml file is the standard configuration file for modern Python projects, defined by PEP 518. It serves as a central place to specify project metadata, dependencies, build requirements, and tool configurations._
-
-
-* RestructuredText Files
-  
-    _reStructuredText is a file format for textual data used primarily in the Python programming language community for technical documentation._
-
-
-
-## Instructions for using {Project Name}
-
-Get started with {Project Name} by {write the first step a user needs to start using the project. Use a verb to start.}.
-
-### Install {Project Name}
+#### Install {Project Name}
 
 1. {Write the step here.}
 
@@ -133,17 +87,17 @@ Get started with {Project Name} by {write the first step a user needs to start u
 
    b. {Substep 2}
 
-### Configure {Project Name}
+#### Configure {Project Name}
 
 1. {Write the step here.}
 2. {Write the step here.}
 
-### Run {Project Name}
+#### Run {Project Name}
 
 1. {Write the step here.}
 2. {Write the step here.}
 
-### Troubleshoot {Project Name}
+#### Troubleshoot {Project Name}
 
 1. {Write the step here.}
 2. {Write the step here.}
@@ -189,41 +143,170 @@ Other troubleshooting supports:
 * {Link to runbooks}
 * {Link to other relevant support information}
 
+### Recommendations
+
+* [Markdown Changelog Generator](https://changelog.seapagan.net)
+
+  `github-changelog-md`
+
+  _For additional options and advanced usage, refer to the documentation._
+
+  _Note: Dont commit the config file to your project repository!_
+
+  The config file contains your GitHub PAT. GitHub always prevents committing credentials, so to push any commit, it's necessary to include the changelog_generator.toml file in the .gitignore.
+
+  The CHANGELOG generator creates CHANGELOG entries based on the repository PRs. For instance, the PR label, is used to define CHANGELOG entry section. Note that options are available to customize the output of the tool, as per the documentation.
+
+  | Title               | Label           | Notes                       |
+  |----------------------|-----------------|------------------------------|
+  | Breaking Changes     | breaking        |                              |
+  | Merged Pull Requests |                 | Any PR with NO labels        |
+  | Enhancements         | enhancement     |                              |
+  | Bug Fixes            | bug             |                              |
+  | Refactoring          | refactor        |                              |
+  | Documentation        | documentation   |                              |
+  | Dependency Updates   | dependencies    |                              |
+
+  To make merge requests from the command line:
+
+  Step 1: Clone the repository or update your local repository with the latest changes.
+
+  git pull origin main
+
+  Step 2: Switch to the base branch of the pull request.
+
+  git checkout main
+
+  Step 3: Merge the head branch into the base branch.
+
+  git merge dev
+
+  Step 4: Push the changes.
+
+  git push -u origin main
+
+### Version Control Process
+I. **Create a Feature Branch**
+Any code updates for a version change -- [Major].[Minor].[Patch] -- should be on a separate branch, referred to as a 'feature' branch.
+
+Once work on the branch is completed, a pull-request can be created to merge the branch into `dev`, a staging/pre-release branch, where those changes are tested.
+
+Once the staging branch is tested, stable code can be merged into `main` a production/release branch.
+
+________________
+##### Maintaining repos
+
+Maintaining the permissions, the branching strategy, and a consistent timeline between each repo lessens the probability of a bottleneck when releasing any new changes.
+
+Permissions
+
+| Repository | Visibility |
+|-------------|-------------|
+| Staging     | Private     |
+| Production  | Public      |
+
+Timeline
+
+| Version | Change    |
+|---------|---------|
+| Major   | 1 month |
+| Minor   | 2 weeks |
+| Patch   | 1 week  |
+
+
+_Once changes are pushed to `main` in the staging repo, allow some time for those changes to 'soak' in the 'dev' in each repository._
+
+| Feature | Timeline |
+|---------|-----------|
+| Major   | 1 month   |
+| Minor   | 2 weeks   |
+| Patch   | 1 week    |
+
+__________________
+
+###### Branch Naming Conventions
+
+`<VERSION-RELEASE-#>/<FEATURE_NAME>/<CONTRIBUTOR>`
+
+- `<VERSION-RELEASE-#>`: Refer to [SemVer](https://semver.org/) for details
+
+- `<FEATURE_NAME>`: Descriptive title for the feature
+
+- `<CONTRIBUTOR>`: GitHub account name, e.g., https://github.com/<NAME>
+
+______________
+
+###### Tagging Conventions
+
+Please use standard tagging conventions to define each branch with its version release number, feature name, and the contributor.
+
+`git tag -a <TAG_VAL> -m "<TAG_TYPE>"`
+
+- `git tag -a v<VERSION_#> -m "version #"`
+- `git tag -a <FEATURE_NAME> -m "feature name"`
+- `git tag -a <CONTRIBUTOR> -m "contributor"`
+
+To check tagging info:
+`git tag -n9`
+
+II. **Pull-request**
+
+Instead of merging on local, please remember to create a pull-request.
+
+`bash ./websauce-scripts/version-control/pull-request.sh`
+
+To do this manually:
+`git request-pull [-p] <VERSION-RELEASE-#> https://github.com/DaniSestan/websauce pre-release`
+
+III. **Merge-request**
+
+Once a pull-request is reviewed, accepted and merged, the merge request data can then be used to document those changes through the Markdown Changelog Generator.
+
+`bash ./websauce-scripts/version-control/merge-request.sh`
+
+To do this manually:
+`git push -o mr.<END> origin <START>`
+
+IV. **Documenting changes**
+
+Maintaining a CHANGELOG file is always recommended for a quick overview of how the project is progressing.
+1. Checkout main locally.
+2. From a terminal session, run the commands to use the GitHub ChangeLog Generator.
+3. Commit the CHANGELOG file to the remote branch.
+
+`changelog-generator-md`
+
 ## Contributing guidelines
 
 {Include a link to your contributing guide here. If you do not have a contributing guide, incorporate the information in the README.}
 
 ## Project documentation
 
-#### Standard project documentation is stored in the `{PROJECT_ROOT}` folder.
+### Standard project docs are located in the `{PROJECT_ROOT}` folder.
 
 - README
 - LICENSE
 - CHANGELOG
-  - Refer to the Project dependencies section of the README for more information on generating a CHANGELOG file
+    - Refer to the Project dependencies section of the README for more information on generating a CHANGELOG file
 
-#### Any other project-specific documentation is stored in the `{PROJECT_ROOT}/docs` folder.
+### Please upload any other supporting documentation in the `{PROJECT_ROOT}/docs` folder.
 
-{Include links and brief descriptions to other documentation.}
+* Reference link 1: Description
+* Reference link 2: Description
+* Reference link 3: Description...
 
-#### For more information:
+## Links
 
-* Reference link 1
+### Support resources
+
+* Reference link 1: Description
 * Reference link 2
 * Reference link 3...
 
-## Links to support resources
+### Other links
 
-{Include links and brief descriptions for support resources. Examples provided in README template guide.}
-
-* Reference link 1
-* Reference link 2
-* Reference link 3...
+* [The Good Docs Project](https://thegooddocsproject.dev/): A site dedicated to software documentation templates
 
 ## Terms of use
 
 {Project Name} is licensed under {link to license file}.
-
----
-
-> Explore other templates from [The Good Docs Project](https://thegooddocsproject.dev/). Use our [feedback form](https://thegooddocsproject.dev/feedback/?template=Readme%20template) to give feedback on this template.
