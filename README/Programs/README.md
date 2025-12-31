@@ -63,7 +63,8 @@ __________________
 
 Before using {Project name}, install necessary pkgs:
 
-* [Python](https://www.python.org/downloads/)
+* [PKG_NAME](https://www.python.org/downloads/)
+* [...]
 
 ### Requirements
 
@@ -137,7 +138,7 @@ If the Markdown Changelog Generator is used, it needs to include  'changelog_gen
   </tr>
 </table>
 
-Other troubleshooting supports:
+Other troubleshooting support:
 
 * {Link to FAQs}
 * {Link to runbooks}
@@ -145,45 +146,19 @@ Other troubleshooting supports:
 
 ### Recommendations
 
-* [Markdown Changelog Generator](https://changelog.seapagan.net)
+* When working through a smaller project such as a program or a software application, a Changelog is recommended.
 
-  `github-changelog-md`
+Changelog entries typically follow a basic format that includes information about the code that was added to enhance a project, removed for any purpose, and modified to resolve errors.
 
-  _For additional options and advanced usage, refer to the documentation._
+Changelog entries are entered in the CHANGELOG file once code is committed to the main branch:
 
-  _Note: Dont commit the config file to your project repository!_
+### [VERSION #] - [TIMESTAMP]
 
-  The config file contains your GitHub PAT. GitHub always prevents committing credentials, so to push any commit, it's necessary to include the changelog_generator.toml file in the .gitignore.
+#### [ADDED || REMOVED || FIXED]
 
-  The CHANGELOG generator creates CHANGELOG entries based on the repository PRs. For instance, the PR label, is used to define CHANGELOG entry section. Note that options are available to customize the output of the tool, as per the documentation.
+\<DESCRIPTION\>
 
-  | Title               | Label           | Notes                       |
-  |----------------------|-----------------|------------------------------|
-  | Breaking Changes     | breaking        |                              |
-  | Merged Pull Requests |                 | Any PR with NO labels        |
-  | Enhancements         | enhancement     |                              |
-  | Bug Fixes            | bug             |                              |
-  | Refactoring          | refactor        |                              |
-  | Documentation        | documentation   |                              |
-  | Dependency Updates   | dependencies    |                              |
-
-  To make merge requests from the command line:
-
-  Step 1: Clone the repository or update your local repository with the latest changes.
-
-  git pull origin main
-
-  Step 2: Switch to the base branch of the pull request.
-
-  git checkout main
-
-  Step 3: Merge the head branch into the base branch.
-
-  git merge dev
-
-  Step 4: Push the changes.
-
-  git push -u origin main
+___
 
 ### Version Control Process
 I. **Create a Feature Branch**
@@ -196,34 +171,6 @@ Once the staging branch is tested, stable code can be merged into `main` a produ
 ________________
 ##### Maintaining repos
 
-Maintaining the permissions, the branching strategy, and a consistent timeline between each repo lessens the probability of a bottleneck when releasing any new changes.
-
-Permissions
-
-| Repository | Visibility |
-|-------------|-------------|
-| Staging     | Private     |
-| Production  | Public      |
-
-Timeline
-
-| Version | Change    |
-|---------|---------|
-| Major   | 1 month |
-| Minor   | 2 weeks |
-| Patch   | 1 week  |
-
-
-_Once changes are pushed to `main` in the staging repo, allow some time for those changes to 'soak' in the 'dev' in each repository._
-
-| Feature | Timeline |
-|---------|-----------|
-| Major   | 1 month   |
-| Minor   | 2 weeks   |
-| Patch   | 1 week    |
-
-__________________
-
 ###### Branch Naming Conventions
 
 `<VERSION-RELEASE-#>/<FEATURE_NAME>/<CONTRIBUTOR>`
@@ -234,39 +181,6 @@ __________________
 
 - `<CONTRIBUTOR>`: GitHub account name, e.g., https://github.com/<NAME>
 
-______________
-
-###### Tagging Conventions
-
-Please use standard tagging conventions to define each branch with its version release number, feature name, and the contributor.
-
-`git tag -a <TAG_VAL> -m "<TAG_TYPE>"`
-
-- `git tag -a v<VERSION_#> -m "version #"`
-- `git tag -a <FEATURE_NAME> -m "feature name"`
-- `git tag -a <CONTRIBUTOR> -m "contributor"`
-
-To check tagging info:
-`git tag -n9`
-
-II. **Pull-request**
-
-Instead of merging on local, please remember to create a pull-request.
-
-`bash ./websauce-scripts/version-control/pull-request.sh`
-
-To do this manually:
-`git request-pull [-p] <VERSION-RELEASE-#> https://github.com/DaniSestan/websauce pre-release`
-
-III. **Merge-request**
-
-Once a pull-request is reviewed, accepted and merged, the merge request data can then be used to document those changes through the Markdown Changelog Generator.
-
-`bash ./websauce-scripts/version-control/merge-request.sh`
-
-To do this manually:
-`git push -o mr.<END> origin <START>`
-
 IV. **Documenting changes**
 
 Maintaining a CHANGELOG file is always recommended for a quick overview of how the project is progressing.
@@ -275,10 +189,6 @@ Maintaining a CHANGELOG file is always recommended for a quick overview of how t
 3. Commit the CHANGELOG file to the remote branch.
 
 `changelog-generator-md`
-
-## Contributing guidelines
-
-{Include a link to your contributing guide here. If you do not have a contributing guide, incorporate the information in the README.}
 
 ## Project documentation
 
@@ -289,23 +199,10 @@ Maintaining a CHANGELOG file is always recommended for a quick overview of how t
 - CHANGELOG
     - Refer to the Project dependencies section of the README for more information on generating a CHANGELOG file
 
-### Please upload any other supporting documentation in the `{PROJECT_ROOT}/docs` folder.
-
-* Reference link 1: Description
-* Reference link 2: Description
-* Reference link 3: Description...
-
 ## Links
 
-### Support resources
-
-* Reference link 1: Description
-* Reference link 2
-* Reference link 3...
-
-### Other links
-
-* [The Good Docs Project](https://thegooddocsproject.dev/): A site dedicated to software documentation templates
+* [<LINK>](https://www.python.org/downloads/): <LINK_DESC>
+* [...]
 
 ## Terms of use
 
