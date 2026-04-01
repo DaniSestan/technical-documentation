@@ -35,25 +35,14 @@ __________________
 
 __________________
 
-### How is the project is organized?
 
-#### Naming conventions
+### Project overview
 
-###### What is the official 'source of truth' for 'standardization'?
+Language(s):
 
-###### E.g., PEP defines the naming convention guidelines for Python.
+Framework(s):
 
-[...]
-
-#### Project structure
-
-[...]
-
-#### File types
-
-###### Not all files types are necessary according to the 'latest' recommendations.
-###### Understand the context of the software app as an end-product.
-###### What's the difference between project recommendations versus requirements?
+Style guide(s):
 
 [...]
 
@@ -201,9 +190,9 @@ Maintaining a CHANGELOG file is always recommended for a quick overview of how t
 
 ## Links
 
-* [<LINK>](https://www.python.org/downloads/): <LINK_DESC>
+* [<LINK>](<URL>): <LINK_DESC>
 * [...]
 
 ## Terms of use
 
-{Project Name} is licensed under {link to license file}.
+{Project Name} is licensed under [MIT](https://commons.wikimedia.org/wiki/Template:X11)

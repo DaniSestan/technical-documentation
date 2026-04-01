@@ -63,7 +63,7 @@ __________________
 
 Before using {Project name}, install necessary pkgs:
 
-* [Python](https://www.python.org/downloads/)
+* [<LINK>](<URL>): <LINK_DESC>
 
 ### Requirements
 
@@ -309,4 +309,4 @@ Maintaining a CHANGELOG file is always recommended for a quick overview of how t
 
 ## Terms of use
 
-{Project Name} is licensed under {link to license file}.
+{Project Name} is licensed under [MIT](https://commons.wikimedia.org/wiki/Template:X11)
