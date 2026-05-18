@@ -1,5 +1,8 @@
+# Credentials scanner
+credentials_scanner
+
 # Credentials files
-changelog_generator.toml
+.changelog_generator.toml
 
 # web-sauce directories/files
 _TMP/
