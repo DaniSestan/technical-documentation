@@ -1,3 +1,6 @@
+# Credentials scanner
+credentials_scanner/
+
 # Credentials files
 .changelog_generator.toml
 
