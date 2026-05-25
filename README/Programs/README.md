@@ -43,7 +43,7 @@ Style guide(s):
 
 ### Pre-requisites
 
-Before using {Project name}, install necessary pkgs:
+Before using {Project Name}, install necessary pkgs:
 
 * [PKG_NAME](https://www.python.org/downloads/)
 * [...]
