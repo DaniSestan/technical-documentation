@@ -29,13 +29,6 @@
 
 __________________
 
-### Who can use this app?
-
-[...]
-
-__________________
-
-
 ### Project overview
 
 Language(s):
