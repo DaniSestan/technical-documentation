@@ -120,12 +120,6 @@ If the Markdown Changelog Generator is used, it needs to include  'changelog_gen
   </tr>
 </table>
 
-Other troubleshooting support:
-
-* {Link to FAQs}
-* {Link to runbooks}
-* {Link to other relevant support information}
-
 ### Recommendations
 
 * When working through a smaller project such as a program or a software application, a Changelog is recommended.
